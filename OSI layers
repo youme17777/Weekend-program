@@ -1,0 +1,34 @@
+1. Application Layer (Layer 7)
+This is where you interact with Telegram. When you type "Hello" into the text box and hit send, you are using the Application Layer. It identifies the communication partner and determines if resources for the message exist.
+
+In Telegram: The interface where you type, the emoji picker, and the "Send" button.
+
+2. Presentation Layer (Layer 6)
+This layer acts as a translator. It ensures that the data is in a usable format and handles encryption, which is a huge part of Telegram’s identity (MTProto protocol).
+
+In Telegram: Converting your typed text into a compressed format to save data and encrypting the message so only the recipient can read it.
+
+3. Session Layer (Layer 5)
+This layer manages the "conversation" or session between your phone and the Telegram servers. It opens, manages, and terminates the connection.
+
+In Telegram: If you lose Wi-Fi for a second and the app says "Updating..." or "Connecting...", the Session Layer is working to re-establish that specific link without you having to log in again.
+
+4. Transport Layer (Layer 4)
+This layer is responsible for end-to-end communication. It decides how to send the data—usually via TCP (to ensure the message arrives perfectly) or UDP (used for Telegram Voice/Video calls where speed is more important than every single tiny packet being perfect).
+
+In Telegram: Breaking your long video file into smaller segments and numbering them so the other phone knows how to put them back together.
+
+5. Network Layer (Layer 3)
+This is the "Router" layer. It handles IP Addresses and determines the best physical path for the data to take across the internet to reach the Telegram server.
+
+In Telegram: Attaching the IP address of the Telegram server to your message "packets" so the internet knows where to route them.
+
+6. Data Link Layer (Layer 2)
+This layer handles the transfer of data between two nodes connected physically. It deals with MAC addresses and ensures the data is formatted correctly for the specific medium (like Wi-Fi or Ethernet).
+
+In Telegram: Transferring the data from your phone to your home Wi-Fi router or a cellular tower.
+
+7. Physical Layer (Layer 1)
+This is the literal hardware. It’s the electrical signals, light pulses (fiber optics), or radio waves (Wi-Fi/5G) that carry the "0s and 1s" of your message.
+
+In Telegram: The radio waves leaving your phone's antenna to reach the nearest cell tower.
